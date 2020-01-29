@@ -24,6 +24,10 @@ requirements:
     - pytz
 
 test:
+  requires:
+    - pip
+  commands:
+    - pip check
   imports:
     - pgcopy
 
