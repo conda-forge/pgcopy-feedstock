@@ -1,18 +1,18 @@
 {% set name = "pgcopy" %}
-{% set version = "1.4.1" %}
+{% set version = "1.4.2" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: b290888be65da3888d8fe742ca8c868ac8d74e43d2c28b4e68fb741789dd23e3
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: b8d3147afbb2ea0667acd5234fa5167d537e4e27b3f0acf532bbd214d7bc4800
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv "
+  script: '{{ PYTHON }} -m pip install . -vv '
 
 requirements:
   host:
@@ -32,12 +32,12 @@ test:
     - pgcopy
 
 about:
-  home: "https://pgcopy.readthedocs.io/en/latest/"
-  license: "MIT"
-  license_family: "MIT"
-  license_file: "LICENSE.txt"
-  summary: "Fast db insert with postgresql binary copy"
-  dev_url: "https://github.com/altaurog/pgcopy"
+  home: https://pgcopy.readthedocs.io/en/latest/
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE.txt
+  summary: Fast db insert with postgresql binary copy
+  dev_url: https://github.com/altaurog/pgcopy
 
 extra:
   recipe-maintainers:
