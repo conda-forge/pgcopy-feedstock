@@ -5,11 +5,11 @@ Home: https://pgcopy.readthedocs.io/en/latest/
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pgcopy-feedstock/blob/master/LICENSE.txt)
 
 Summary: Fast db insert with postgresql binary copy
 
-
+Development: https://github.com/altaurog/pgcopy
 
 Current build status
 ====================
