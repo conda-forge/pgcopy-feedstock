@@ -1,5 +1,5 @@
 {% set name = "pgcopy" %}
-{% set version = "1.6.0" %}
+{% set version = "1.6.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0da9235eea4ee9ceb4f52b97523bc89db9a6f8e80f897b49214e814ea13d04b0
+  sha256: d1f83c39eb95ca77b93ef4a52d843651b60b9a876d054d6b48f7893867237189
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: '{{ PYTHON }} -m pip install . -vv '
 
